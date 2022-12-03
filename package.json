@@ -1,0 +1,46 @@
+{
+  "name": "jovo-community-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "prettier": "prettier --config ./.prettierrc.js --write \"{test,src}/**/*\" --list-different",
+    "tslint": "tslint -p tsconfig.json -c tslint.json",
+    "tsc": "tsc",
+    "rimraf": "rimraf ./dist",
+    "typedoc": "typedoc --out ./docs ./ --mode file",
+    "test": "jest --runInBand --detectOpenHandles"
+  },
+  "author": "jovotech",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jovo-core": "^3.6.1",
+    "lodash.get": "^4.4.2",
+    "lodash.merge": "^4.6.2",
+    "lodash.set": "^4.3.2",
+    "mongodb": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "@types/jest": "^27.5.2",
+    "@types/lodash": "^4.14.109",
+    "@types/lodash.get": "^4.4.7",
+    "@types/lodash.merge": "^4.6.7",
+    "@types/lodash.set": "^4.3.7",
+    "@types/node": "^18.11.0",
+    "jest": "^27.3.1",
+    "mongodb-memory-server": "^8.10.1",
+    "prettier": "2.0.2",
+    "rimraf": "^2.6.2",
+    "source-map-support": "^0.5.8",
+    "ts-jest": "^27.0.7",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typedoc": "^0.23.21",
+    "typescript": "^4.2.3"
+  },
+  "files": [
+    "dist/src/**/*"
+  ]
+}
